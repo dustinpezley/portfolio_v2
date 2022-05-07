@@ -3,7 +3,8 @@
   --secondary-color: #D3D3D3;
   --tertiary-color: #7FFFD4;
   --quaternary-color: #630630;
-    --quinary-color: #FFFFFF;
+  --quinary-color: #FFFFFF;
+  --senary-color: #00008b;
 }
 
 * {
@@ -17,9 +18,17 @@ body {
   background-color: var(--secondary-color);
 }
 
+section {
+  padding: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
 /* HEADER */
 header {
-  padding: 20px 35px;
+  padding: 20px 35px 20px 0;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
@@ -31,13 +40,15 @@ header {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: var(--quinary-color);
   margin: 0;
+  padding: 5px 5px 5px 5%;
+  font-variant: small-caps;
+  background: var(--tertiary-color);
 }
 
 header h1 a {
   text-decoration: none;
-  color: var(--quinary-color);
+  color: var(--senary-color);
 }
 
 header nav {
@@ -64,11 +75,36 @@ header nav ul li a {
 /* HERO */
 .hero {
   background-image: url(../images/Hero.png);
-  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  background-position: center;
+  background-attachment: local;
+  flex-direction: row-reverse;
+}
+
+.hero-sub {
+  padding: 2%;
+  text-align: center;
+  margin: 25% 0 0 0;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--tertiary-color);
+}
+/* END HERO */
+
+/* ABOUT ME */
+.title {
+  flex: 1;
+  margin: 0 3.5%;
+  padding: 0;
+  text-align: right;
+  font-size: 4vw;
+  font-weight: bold;
+  color: var(--senary-color);
+
+}
+
+.content {
+  flex: 3;
+  padding-left: 3.5%;
+  border-left: 3px solid var(--senary-color);
 }
