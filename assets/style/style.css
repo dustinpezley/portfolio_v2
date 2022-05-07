@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #696969;
+  --secondary-color: #D3D3D3;
+  --tertiary-color: #7FFFD4;
+  --quaternary-color: #630630;
+    --quinary-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif ;
+  background-color: var(--secondary-color);
+}
+
+/* HEADER */
+header {
+  padding: 20px 35px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--quinary-color);
+  margin: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--quinary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 20px;
+  color: var(--quinary-color);
+  margin-bottom: 10px;
+}
+/* HEADER END */
+
+/* HERO */
+.hero {
+  background-image: url(../images/Hero.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
