@@ -1,7 +1,7 @@
 :root {
   --primary-color: #696969;
   --secondary-color: #D3D3D3;
-  --tertiary-color: #7FFFD4;
+  --tertiary-color: #40e0d0;
   --quaternary-color: #630630;
   --quinary-color: #FFFFFF;
   --senary-color: #00008b;
@@ -72,7 +72,7 @@ header nav ul li a {
 }
 /* HEADER END */
 
-/* HERO */
+/* HERO (need to resize hero image for mobile)*/
 .hero {
   background-image: url(../images/Hero.png);
   background-size: cover;
@@ -85,26 +85,56 @@ header nav ul li a {
   padding: 2%;
   text-align: center;
   margin: 25% 0 0 0;
-  font-size: 30px;
+  font-size: 30px; /* need to vary this based on screen size */
   font-weight: bold;
   background-color: var(--tertiary-color);
 }
 /* END HERO */
 
-/* ABOUT ME */
+/* ABOUT ME, WORK, CONTACT GENERAL */
 .title {
   flex: 1;
   margin: 0 3.5%;
   padding: 0;
   text-align: right;
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: bold;
   color: var(--senary-color);
-
+  align-self: flex-start;
+  width: 20%;
 }
 
 .content {
-  flex: 3;
+  flex: 5;
   padding-left: 3.5%;
   border-left: 3px solid var(--senary-color);
+}
+/* ABOUT ME, WORK, CONTACT GENERAL END */
+
+/* PORTFOLIO */
+.content img {
+  width: 80%;
+  margin-right: 3%;
+}
+
+.screenshot-title {
+  display: block;
+  float: left;
+  position: absolute;
+  background-color: var(--tertiary-color);
+}
+
+figure {
+  position: relative;
+  float: left;
+}
+/* PORTFOLO END */
+
+/* CONTACT */
+#contact-details {
+  display: flex;
+  justify-content: space-between;
+}
+#contact-details img {
+  max-width: 35px;
 }
