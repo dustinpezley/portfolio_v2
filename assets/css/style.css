@@ -93,15 +93,14 @@ header nav ul li a {
 
 /* ABOUT ME, WORK, CONTACT GENERAL */
 .title {
-  flex: 1;
+  flex: 0.75;
   margin: 0 3.5%;
   padding: 0;
   text-align: right;
-  font-size: 3.5vw;
+  font-size: 2vw;
   font-weight: bold;
   color: var(--senary-color);
   align-self: flex-start;
-  width: 20%;
 }
 
 .content {
@@ -113,28 +112,38 @@ header nav ul li a {
 
 /* PORTFOLIO */
 .content img {
-  width: 80%;
-  margin-right: 3%;
-}
-
-.screenshot-title {
+  width: 100%;
+  margin: 0 auto;
   display: block;
-  float: left;
-  position: absolute;
-  background-color: var(--tertiary-color);
+  border: 3px solid var(--tertiary-color);
 }
 
 figure {
   position: relative;
-  float: left;
+  margin: 0 auto;
 }
+
+.screenshot-title {
+  display: inline-block;
+  position: absolute;
+  background-color: var(--tertiary-color);
+  padding: 5px 5px 5px 5%;
+  bottom: 30px;
+}
+
+.most-recent {
+  font-size: 1.25vw;
+}
+
+
 /* PORTFOLO END */
 
 /* CONTACT */
 #contact-details {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #contact-details img {
-  max-width: 35px;
+  max-width: 50px;
 }
