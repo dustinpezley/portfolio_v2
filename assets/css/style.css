@@ -111,7 +111,7 @@ header nav ul li a {
 /* ABOUT ME, WORK, CONTACT GENERAL END */
 
 /* PORTFOLIO */
-.content img {
+.most-recent-img {
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -139,7 +139,7 @@ figure {
   bottom: 30px;
 }
 
-.most-recent {
+.most-recent-caption {
   font-size: 1.25vw;
 }
 
