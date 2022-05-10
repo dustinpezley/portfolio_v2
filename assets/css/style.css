@@ -116,6 +116,11 @@ header nav ul li a {
   margin: 0 auto;
   display: block;
   border: 3px solid var(--tertiary-color);
+  opacity: 50%;
+}
+
+.content img:hover {
+  opacity: 100%;
 }
 
 figure {
