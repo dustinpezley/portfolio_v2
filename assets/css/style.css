@@ -32,6 +32,7 @@ header {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   top: 0;
   z-index: 9999;
@@ -118,8 +119,26 @@ header nav ul li a {
   border: 3px solid var(--tertiary-color);
 }
 
+.previous-img {
+  width: 50%;
+  margin: 0;
+
+  border: 3px solid var(--tertiary-color);
+}
+
+/* .left {
+  float: left;
+  margin-left: 2.5%;
+}
+
+.right {
+  float: right;
+  margin-right: 2.5%;
+} */
+
 .screenshot {
   opacity: 50%;
+  margin-bottom: 2.5%;
 }
 
 .screenshot:hover {
@@ -141,6 +160,10 @@ figure {
 
 .most-recent-caption {
   font-size: 1.25vw;
+}
+
+.previous-caption {
+  font-size: .75vw;
 }
 
 
