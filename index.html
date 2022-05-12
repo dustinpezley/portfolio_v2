@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Dustin Pezley</title>
+  <title>Dustin Pezley Portfolio</title>
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -16,20 +16,10 @@
         </a>
       </h1>
       <nav>
-        <ul>
-          <li>
-            <a href="#about">About Me</a>
-          </li>
-          <li>
-            <a href="#portfolio">My Work</a>
-          </li>
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            <a href="https://docs.google.com/document/d/1Wg7L1UyJRH1VctKqeR4CQ-LYNMDULlqqNrm-dkCOcRM/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Resume</a>
-          </li>
-        </ul>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">My Work</a>
+        <a href="#contact">Contact Me</a>
+        <a href="https://docs.google.com/document/d/1Wg7L1UyJRH1VctKqeR4CQ-LYNMDULlqqNrm-dkCOcRM/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Resume</a>
       </nav>
     </header>
   <!-- END NAVIGATION -->
@@ -37,96 +27,92 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-sub">
-      <p>Subtitle</p>
+      <h2>Subtitle</h2>
     </div>
   </section>
   <!-- END HERO -->
 
   <!-- ABOUT ME -->
-  <section class="about" id="about">
-    <div class="title">
+  <main class="page">
+    <section class="page-section" id="about">
       <h2>About Me</h2>
-    </div>
-    <div class="content" id="bio">
-      <p>
-        Full stack web developer leveraging background in marketing research 
-        and consumer behavior to build more user-oriented experiences on the 
-        web. Currently pursuing an intensive full stack web development 
-        coding certificate at Washington University in St. Louis and 
-        gaining experience in HTML5, CSS3, Bootstrap, jQuery, JSON, AJAX, 
-        MERN stack, MySQL, and NoSQL. Pursuing additional knowledge in 
-        Python, Java, C#, and AWS.
-      </p>
-      <br />
-      <p>
-        Passionate learner, collaborator, and problem-solver seeking to 
-        create and maintain websites and mobile apps that empower the user 
-        in meaningful ways and make their experience easier and more 
-        enjoyable. Looking to bring my attention to detail and technical 
-        skills to a company to grow and be a valuable asset to my team.
-      </p>
-    </div>
-  </section>
-  <!-- END ABOUT ME -->
+      <div id="bio">
+        <p>
+          Full stack web developer leveraging background in marketing research 
+          and consumer behavior to build more user-oriented experiences on the 
+          web. Currently pursuing an intensive full stack web development 
+          coding certificate at Washington University in St. Louis and 
+          gaining experience in HTML5, CSS3, Bootstrap, jQuery, JSON, AJAX, 
+          MERN stack, MySQL, and NoSQL. Pursuing additional knowledge in 
+          Python, Java, C#, and AWS.
+        </p>
+        <p>
+          Passionate learner, collaborator, and problem-solver seeking to 
+          create and maintain websites and mobile apps that empower the user 
+          in meaningful ways and make their experience easier and more 
+          enjoyable. Looking to bring my attention to detail and technical 
+          skills to a company to grow and be a valuable asset to my team.
+        </p>
+      </div>
+    </section>
+    <!-- END ABOUT ME -->
 
-  <!-- PORTFOLIO -->
-  <section class="portfolio" id="portfolio">
-    <div class="title">
+    <!-- PORTFOLIO -->
+    <section class="page-section" id="portfolio">
       <h2>My Work</h2>
-    </div>
-    <div class="content" id="applications">
-      <figure class="screenshot most-recent-fig" id="run-buddy">
-        <a href="https://dustinpezley.github.io/run-buddy/" target="_blank" rel="noreferrer noopener">
-          <img class="most-recent-img" src="./assets/images/run-buddy.png" alt="Run Buddy screenshot with three gym trainers strutting their stuff" />
-        </a>
-        <figcaption class="screenshot-title most-recent-caption">
-          <h3>Run Buddy</h3>
-          <p>HTML/CSS</p>
-        </figcaption>
-      </figure>
-      <figure class="screenshot previous-fig" id="run-buddy">
-        <a href="https://dustinpezley.github.io/run-buddy/" target="_blank" rel="noreferrer noopener">
-          <img class="previous-img left" src="./assets/images/run-buddy.png" alt="Run Buddy screenshot with three gym trainers strutting their stuff" />
-        </a>
-        <figcaption class="screenshot-title previous-caption">
-          <h3>Run Buddy</h3>
-          <p>HTML/CSS</p>
-        </figcaption>
-      </figure>
-      <figure class="screenshot previous-fig" id="run-buddy">
-        <a href="https://dustinpezley.github.io/run-buddy/" target="_blank" rel="noreferrer noopener">
-          <img class="previous-img right" src="./assets/images/run-buddy.png" alt="Run Buddy screenshot with three gym trainers strutting their stuff" />
-        </a>
-        <figcaption class="screenshot-title previous-caption">
-          <h3>Run Buddy</h3>
-          <p>HTML/CSS</p>
-        </figcaption>
-    </div>
-  </section>
-  <!-- END PORTFOLIO -->
+      <div class="flex-container">
 
-  <!-- CONTACT ME -->
-  <section class="contact" id="contact">
-    <div class="title">
+        <a href="#" class="flex-item surf-report" target="_blank" rel="noreferrer noopener">
+          <div>
+            <h3>Surf Report</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex-item led-wall" target="_blank" rel="noreferrer noopener">
+          <div>
+            <h3>LED Wall</h3>
+            <span>Node/IoT</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex-item react-calc" target="_blank" rel="noreferrer noopener">
+          <div>
+            <h3>Calculator</h3>
+            <span>React/JavaScript/CSS</span>
+          </div>
+        </a>
+
+        <a href="#" class="flex-item pastel-puzzles" target="_blank" rel="noreferrer noopener">
+          <div>
+            <h3>Pastel Puzzles</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
+
+        <a href="https://dustinpezley.github.io/run-buddy/" class="flex-item run-buddy" target="_blank" rel="noreferrer noopener">
+          <div>
+            <h3>Run Buddy</h3>
+            <span>HTML/CSS</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- END PORTFOLIO -->
+
+    <!-- CONTACT ME -->
+    <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
-    </div>
-    <div class="content" id="contact-details">
-      <div id="phone">
-        <a href="tel:+16609091771">660.909.1771</a>
+      <div>
+        <address>
+          <a href="tel:+16609091771">660.909.1771</a>
+          <a href="mailto:dustinpezley@gmail.com">dustinpezley@gmail.com</a>
+          <a href="https://github.com/dustinpezley" target="_blank" rel="noreferrer noopener"><img id="github-icon" src="./assets/images/github-icon.svg" alt="GitHub link" /></a>
+          <a href="https://www.linkedin.com/in/dustinpezley/" target="_blank" rel="noreferrer noopener"><img src="./assets/images/linkedin-icon-2.svg" alt="LinkedIn link" /></a>
+          <a href="https://twitter.com/kyojushin" target="_blank" rel="noreferrer noopener"><img src="./assets/images/twitter-6.svg" alt="Twitter link" /></a>
+        </address>
       </div>
-      <div id="email">
-        <a href="mailto:dustinpezley@gmail.com">dustinpezley@gmail.com</a>
-      </div>
-      <div id="github">
-        <a href="https://github.com/dustinpezley" target="_blank" rel="noreferrer noopener"><img src="./assets/images/github-icon.svg" alt="GitHub link" /></a>
-      </div>
-      <div id="linkedin">
-        <a href="https://www.linkedin.com/in/dustinpezley/" target="_blank" rel="noreferrer noopener"><img src="./assets/images/linkedin-icon-2.svg" alt="LinkedIn link" /></a>
-      </div>
-      <div id="twitter">
-        <a href="https://twitter.com/kyojushin" target="_blank" rel="noreferrer noopener"><img src="./assets/images/twitter-6.svg" alt="Twitter link" /></a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
