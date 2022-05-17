@@ -177,13 +177,13 @@ p {
 }
 /* IMAGES END */
 
-.flex-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.flex-item {
+.project {
   border: 3px solid var(--secondary-color);
   background-color: var(--tertiary-color);
   background-size: cover;
@@ -202,21 +202,21 @@ p {
   transition: all 0.4s linear;
 }
 
-.flex-item div {
+.project div {
   background-color: var(--secondary-color);
   padding: 0 10px;
 }
 
-.flex-item h3 {
+.project h3 {
   font-size: 1.5rem;
 }
 
-.flex-item:first-child {
+.project:first-child {
   min-height: 425px;
   flex-basis: 100%;
 }
 
-.flex-item:hover {
+.project:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 /* PORTFOLIO END */
@@ -293,11 +293,11 @@ p {
     font-size: 1rem;
   }
 
-  .flex-item, .flex-item:first-child {
+  .project, .project:first-child {
     flex-basis: 100%;
   }
 
-  .flex-item:first-child {
+  .project:first-child {
     min-height: 150px;
   }
   
