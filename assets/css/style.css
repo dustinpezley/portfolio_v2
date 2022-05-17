@@ -1,9 +1,9 @@
 :root {
-  --primary-color: rgba(68, 88, 119, 1);
-  --secondary-color: rgba(146, 204, 206, 1);
-  --tertiary-color: rgba(49, 52, 61, 1);
-  --dark-accent: rgba(28, 29, 33, 1);
-  --light-accent: rgba(238, 238, 247, 1);
+  --primary-color: #e85a4f;
+  --secondary-color: #eae7dc;
+  --tertiary-color: #8e8d8a;
+  --dark-accent: #e98074;
+  --light-accent: #d8c3a5;
 }
 
 * {
@@ -13,7 +13,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, sans-serif ;
+  font-family: 'TW Cen MT', 'Trebuchet MS', Arial, sans-serif ;
   line-height: 1.5;
   color: var(--primary-color);
   background-color: var(--light-accent);
@@ -85,6 +85,9 @@ nav a:hover {
   text-align: right;
   min-height: 60vh;
   padding: 2% 6%;
+  font-variant: small-caps;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;  
 }
 
 .hero-sub {
@@ -116,14 +119,14 @@ main {
   background-image: linear-gradient(270deg, var(--tertiary-color) 0%, var(--tertiary-color) 100%);
   background-repeat: no-repeat;
   background-size: 0em 100%;
-  background-position: right;
+  background-position: left;
   transition: all 0.3s ease-in;
 }
 
 .page-section > h2 {
   flex: 0 0 20%;
+  color: var(--tertiary-color);
   text-align: right;
-  /*border-right: 3px solid var(--primary-color);*/
   font-size: 4vw;
   line-height: 1.2;
   padding-right: 15px;
@@ -144,11 +147,11 @@ p {
 
 #about:hover > h2, #about:hover, #portfolio:hover > h2, #portfolio:hover, #contact:hover > h2, #contact:hover {
   background-size: 100% 100%;
-  color: var(--light-accent)
+  color: var(--secondary-color);
 }
 
 #contact:hover div address a {
-  color: var(--light-accent);
+  color: var(--secondary-color);
 }
 
 /* PORTFOLIO */
@@ -182,7 +185,7 @@ p {
 
 .flex-item {
   border: 3px solid var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   background-size: cover;
   background-position: center;
   color: var(--tertiary-color);
@@ -196,6 +199,7 @@ p {
   min-height: 150px;
   flex-basis: calc(50% - 1vw);
   background-blend-mode: soft-light;
+  transition: all 0.4s linear;
 }
 
 .flex-item div {
@@ -213,7 +217,7 @@ p {
 }
 
 .flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0);
 }
 /* PORTFOLIO END */
 
@@ -227,7 +231,7 @@ p {
 }
 
 .contact address img {
-  max-width: 50px;
+  max-height: 50px;
 }
 
 .contact address a {
@@ -246,11 +250,6 @@ p {
 #contact div address a:hover {
   background-size: 100% 100%;
   color: var(--secondary-color);
-}
-
-#github-icon:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
 }
 
 /* SMALLER SCREEN STYLING */
@@ -285,6 +284,14 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
   .flex-item, .flex-item:first-child {
     flex-basis: 100%;
   }
@@ -294,17 +301,18 @@ p {
   }
   
   .contact address {
-    flex-direction: column;
     align-items: center;
     margin: 5px 0 10px 0;
   }
 
+  .contact address a img {
+    max-height: 25px;
+  }
+
   .hero {
-    background-image: url(../images/Headshot_cropped\ \(1\).png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left, top right, bottom right;
+    background-size: cover;
+    background-position: left;
     background-color: var(--tertiary-color);
-    min-height: 52vh;
+    min-height: 35vh;
   }
 }
