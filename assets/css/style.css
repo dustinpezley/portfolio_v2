@@ -127,7 +127,7 @@ main {
   flex: 0 0 20%;
   color: var(--tertiary-color);
   text-align: right;
-  font-size: 4vw;
+  font-size: 4.5vw;
   line-height: 1.2;
   padding-right: 15px;
   background-image: linear-gradient(270deg, var(--primary-color) 0%, var(--primary-color) 100%);
@@ -285,7 +285,8 @@ p {
 
 @media screen and (max-width: 768px) {
   nav a {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-right: 9px;
   }
 
   .hero h2 {
