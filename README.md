@@ -14,4 +14,3 @@ Each icon is a link to me, whether by telephone, email, or something else.
 
 ##Screenshot
 ![Screenshot](./assets/images/dustinpezley.github.io_Portfolio_.png)
-![Screenshot](dustinpezley.github.io_Portfolio_.png)
