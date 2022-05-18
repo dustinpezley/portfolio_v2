@@ -7,7 +7,7 @@ This site provides a one-stop source for all of my work, as well as my resume an
 A quick primer for me as an individual.
 
 ### My Work
-Here you cna find my portfolio with direct links to each. I'll keep adding to this as I complete additional work.
+Here you can find my portfolio with direct links to each. I'll keep adding to this as I complete additional work.
 
 ### Contact Me
 Each icon is a link to me, whether by telephone, email, or something else.
