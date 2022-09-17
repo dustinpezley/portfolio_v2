@@ -111,6 +111,92 @@ header {
 }
 /* NAV END */
 
+/* ABOUT START */
+#about {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-title {
+  font-size: 5rem;
+  text-decoration: underline;
+}
+
+#bio-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#brand-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bio-brand {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brand-image-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#brand-image {
+  width: 35vw;
+  margin: 0;
+  padding: 0;
+}
+
+#brand-title {
+  margin: 0;
+  padding: 0;
+}
+
+#brand-statement {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#brand-contact {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#skills-container {
+  width: 80%;
+}
+
+#bio-skills {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-icon-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ABOUT END */
+
 /* PROJECTS START */
 
 /* PROJECTS END */

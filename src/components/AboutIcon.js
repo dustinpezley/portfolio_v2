@@ -1,8 +1,10 @@
 import React from 'react';
 
 const AboutIcon = (props) => {
-  <div>
+  <div id="icon-container">
     <div id="about-icon">{props.icon}</div>
-    <div id="about-text">{props.text}</div>
+    <p id="about-text">{props.text}</p>
   </div>;
 };
+
+export default AboutIcon;

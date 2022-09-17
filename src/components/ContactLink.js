@@ -7,7 +7,7 @@ const ContactLink = (props) => {
         className="ui icon animated fade button"
         onClick={() => props.link}
         referrerPolicy="no-referrer no-opener"
-        tabindex="0"
+        tabIndex="0"
         id="logo-button"
       >
         <div className="visible content" id="logo-link">
