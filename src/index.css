@@ -87,7 +87,7 @@ header {
 /* SPLASH END */
 
 /* NAV START */
-.navigation {
+#navigation {
   margin: 0;
   padding: 0;
   display: flex;
@@ -96,10 +96,12 @@ header {
   border-bottom: 4px solid var(--accent-color-1);
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
+  font-size: 1.5rem;
 }
 
-.navigation .active {
+#navigation .active {
   color: var(--accent-color-2);
+  font-weight: bold;
 }
 
 .navigation a {
@@ -121,7 +123,7 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   margin: 0;
-  pading: 0;
+  padding: 0;
 }
 
 .logo-container {
@@ -131,6 +133,45 @@ header {
   align-items: center;
   justify-content: space-around;
   margin: 1.5rem 0;
+}
+
+#logo-button {
+  padding: 0;
+  margin: 0;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+#logo-link {
+  display: flex;
+}
+
+#logo-link i {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+#logo-arrow i {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: var(--accent-color-1);
+}
+
+#footer-name {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-year {
+  color: var(--accent-color-2);
 }
 /* FOOTER END */
 

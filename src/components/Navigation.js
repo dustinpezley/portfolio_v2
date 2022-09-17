@@ -5,7 +5,7 @@ const Navigation = () => {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="ui link list navigation">
+    <div className="ui link list" id="navigation">
       <a
         href="#home"
         onClick={() => handlePageChange('Home')}

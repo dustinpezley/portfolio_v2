@@ -4,12 +4,16 @@ const ContactLink = (props) => {
   return (
     <div className="logo">
       <button
-        className="ui icon animated button"
+        className="ui icon animated fade button"
         onClick={() => props.link}
         referrerPolicy="no-referrer no-opener"
+        tabindex="0"
+        id="logo-button"
       >
-        <div className="visible content">{props.logo}</div>
-        <div className="hidden content">
+        <div className="visible content" id="logo-link">
+          {props.logo}
+        </div>
+        <div className="hidden content" id="logo-arrow">
           <i className="angle right icon"></i>
         </div>
       </button>
