@@ -89,18 +89,21 @@ header {
 /* NAV START */
 #navigation {
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 4px solid var(--accent-color-1);
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #navigation .active {
-  color: var(--accent-color-2);
+  color: var(--accent-color-1);
   font-weight: bold;
 }
 
@@ -123,6 +126,7 @@ header {
 #about-title {
   font-size: 5rem;
   text-decoration: underline;
+  margin-bottom: 5rem;
 }
 
 #bio-container {
@@ -195,11 +199,65 @@ header {
   align-items: center;
   justify-content: space-around;
 }
+
+#icon-container {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+#about-icon {
+  font-size: 4rem;
+  color: var(--accent-color-1);
+  margin-bottom: 2rem;
+}
+
+#about-text {
+  font-size: 1.7rem;
+}
 /* ABOUT END */
 
 /* PROJECTS START */
 
 /* PROJECTS END */
+
+/* CONTACT START */
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+#contact-title {
+  font-size: 5rem;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+#form-elements {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+#form-elements label {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+}
+
+#form-elements input,
+#form-elements textarea {
+  margin-bottom: 1.5rem;
+  background-color: var(--tertiary-color);
+}
+
+#form-elements input:focus,
+#form-elements textarea:focus {
+  background-color: var(--secondary-color);
+}
+/* CONTACT END */
 
 /* FOOTER START */
 #footer {

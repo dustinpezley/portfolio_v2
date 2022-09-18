@@ -17,15 +17,15 @@ const About = () => {
       </div>
       <div id="about-icon-container">
         <AboutIcon
-          icon={<i className="circular crosshairs icon"></i>}
+          icon={<i className="big circular crosshairs icon"></i>}
           text="Design-first approach with an eye for the little details."
         />
         <AboutIcon
-          icon={<i className="circular user outline icon"></i>}
+          icon={<i className="big circular user outline icon"></i>}
           text="Websites that have their own identity and keep users engaged."
         />
         <AboutIcon
-          icon={<i className="circular lightbulb outline icon"></i>}
+          icon={<i className="big circular lightbulb outline icon"></i>}
           text="Preference toward minimalist, intuitive UI."
         />
       </div>

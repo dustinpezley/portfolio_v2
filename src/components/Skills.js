@@ -28,7 +28,12 @@ const Skills = () => {
 
   return (
     <div id="skills-container">
-      <SkillBar skills={skills} height={'3vh'} colors={colors} />
+      <SkillBar
+        skills={skills}
+        height={'3vh'}
+        colors={colors}
+        animationDelay={1000}
+      />
     </div>
   );
 };
