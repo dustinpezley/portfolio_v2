@@ -6,7 +6,9 @@ import Skills from './Skills';
 const About = () => {
   return (
     <div id="about">
-      <h1 id="about-title">ABOUT</h1>
+      <h1 id="about-title" className="title">
+        ABOUT
+      </h1>
       <div id="bio-container">
         <div id="bio-brand">
           <Brand />

@@ -4,7 +4,9 @@ import React from 'react';
 const ContactForm = () => {
   return (
     <div id="contact-form">
-      <h1 id="contact-title">Contact</h1>
+      <h1 id="contact-title" className="title">
+        Contact
+      </h1>
       {/* <Formik
         initialValues={{ name: '', email: '', message: '' }}
         validate={(values) => {

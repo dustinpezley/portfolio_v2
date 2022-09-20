@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import ContactForm from './components/ContactForm';
 import Project from './components/Project';
+import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Project />
       <ContactForm />
       <Footer />
+      <ScrollToTop smooth color={'#ff0035'} />
     </div>
   );
 }

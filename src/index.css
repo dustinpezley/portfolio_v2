@@ -86,6 +86,15 @@ header {
 }
 /* SPLASH END */
 
+/* UNIVERSAL START */
+.title {
+  font-size: 5rem;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+/* UNIVERSAL END */
+
 /* NAV START */
 #navigation {
   margin: 0;
@@ -121,12 +130,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#about-title {
-  font-size: 5rem;
-  text-decoration: underline;
-  margin-bottom: 5rem;
 }
 
 #bio-container {
@@ -196,7 +199,7 @@ header {
 #about-icon-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -217,7 +220,12 @@ header {
 /* ABOUT END */
 
 /* PROJECTS START */
-
+#projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
 /* PROJECTS END */
 
 /* CONTACT START */
@@ -231,9 +239,6 @@ header {
 }
 
 #contact-title {
-  font-size: 5rem;
-  text-decoration: underline;
-  margin-bottom: 5rem;
   margin-top: 2rem;
 }
 
