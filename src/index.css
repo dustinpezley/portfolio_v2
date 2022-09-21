@@ -17,7 +17,7 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -91,35 +91,35 @@ header {
   font-size: 5rem;
   text-decoration: underline;
   margin-bottom: 5rem;
-  margin-top: 2rem;
+  padding-top: 3.5rem;
 }
 /* UNIVERSAL END */
 
 /* NAV START */
 #navigation {
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 4px solid var(--accent-color-1);
   background-color: var(--tertiary-color);
-  color: var(--secondary-color);
   font-size: 2rem;
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
-#navigation .active {
-  color: var(--accent-color-1);
-  font-weight: bold;
-}
-
-.navigation a {
+.nav-link {
   font-size: 1.5rem;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
+  color: var(--secondary-color);
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: var(--accent-color-1);
 }
 /* NAV END */
 
@@ -226,6 +226,25 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
+#filter-list {
+  margin-bottom: 6rem;
+}
+
+#filter-list button {
+  margin-right: 5rem;
+}
+
+#filter-list button:last-of-type {
+  margin-right: 0;
+}
+
+.projects-container div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* PROJECTS END */
 
 /* CONTACT START */
@@ -244,7 +263,7 @@ header {
 
 #form-elements {
   width: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 #form-elements label {
@@ -256,6 +275,20 @@ header {
 #form-elements textarea {
   margin-bottom: 1.5rem;
   background-color: var(--tertiary-color);
+}
+
+#form-button {
+  border: 2px solid var(--accent-color-2);
+}
+
+#form-button-label {
+  color: var(--accent-color-2);
+  font-size: 1.4rem;
+}
+
+#form-button:hover {
+  background-color: var(--accent-color-2);
+  font-weight: bolder;
 }
 
 #form-elements input:focus,
@@ -287,8 +320,8 @@ header {
 #logo-button {
   padding: 0;
   margin: 0;
-  width: 4rem;
-  height: 4rem;
+  width: 3.7rem;
+  height: 3.7rem;
   display: flex;
   align-items: center;
   justify-content: center;

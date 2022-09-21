@@ -8,16 +8,16 @@ const Header = () => {
       </p>
       <p className="header-secondary">I'm a full-stack web developer.</p>
       <div id="view-work-container">
-        <button
-          type="button"
-          id="view-work"
-          className="ui basic inverted button header-secondary"
-          /* Need to define useState for navigation in App and pass as props to each element that requires it. */
-          /* onClick will use handlePageChange to scroll to Projects. */
-        >
-          View my work{' '}
-          <i id="-view-work-arrow" className="angle double right icon"></i>
-        </button>
+        <a href="#projects">
+          <button
+            type="button"
+            id="view-work"
+            className="ui basic inverted button header-secondary"
+          >
+            View my work{' '}
+            <i id="-view-work-arrow" className="angle double right icon"></i>
+          </button>
+        </a>
       </div>
     </header>
   );

@@ -1,37 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Navigation = () => {
-  const [currentPage, setCurrentPage] = useState('Home');
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <div className="ui link list" id="navigation">
-      <a
-        href="#home"
-        onClick={() => handlePageChange('Home')}
-        className={currentPage === 'Home' ? 'active item' : 'item'}
-      >
+      <a className="nav-link" href="#home">
         Home
       </a>
-      <a
-        href="#about"
-        onClick={() => handlePageChange('About')}
-        className={currentPage === 'Home' ? 'active item' : 'item'}
-      >
+      <a className="nav-link" href="#about">
         About
       </a>
-      <a
-        href="#projects"
-        onClick={() => handlePageChange('Projects')}
-        className={currentPage === 'Home' ? 'active item' : 'item'}
-      >
+      <a className="nav-link" href="#projects">
         Projects
       </a>
-      <a
-        href="#contact"
-        onClick={() => handlePageChange('Contact')}
-        className={currentPage === 'Home' ? 'active item' : 'item'}
-      >
+      <a className="nav-link" href="#contact-form">
         Contact
       </a>
     </div>

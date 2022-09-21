@@ -1,13 +1,15 @@
 import React from 'react';
 
 const ContactLink = (props) => {
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener, noreferrer');
+  };
+
   return (
     <div className="logo">
       <button
         className="ui icon animated fade button"
-        onClick={() => props.link}
-        referrerPolicy="no-referrer no-opener"
-        tabIndex="0"
+        onClick={() => openInNewTab(props.link)}
         id="logo-button"
       >
         <div className="visible content" id="logo-link">

@@ -27,7 +27,7 @@ const Project = () => {
   return (
     <div id="projects">
       <h1 id="projects-title" className="title">
-        Projects
+        PROJECTS
       </h1>
       <div className="ui horizontal selection list" id="language-filter">
         <ProjectFilter
