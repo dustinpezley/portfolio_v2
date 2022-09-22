@@ -30,7 +30,7 @@ const Skills = () => {
     <div id="skills-container">
       <SkillBar
         skills={skills}
-        height={'3vh'}
+        height={'3.5vh'}
         colors={colors}
         animationDelay={1000}
       />

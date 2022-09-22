@@ -8,7 +8,7 @@ const ContactLink = (props) => {
   return (
     <div className="logo">
       <button
-        className="ui icon animated fade button"
+        className="ui icon animated fade button logo-button"
         onClick={() => openInNewTab(props.link)}
         id="logo-button"
       >

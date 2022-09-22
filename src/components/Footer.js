@@ -23,6 +23,10 @@ const Footer = () => {
           link="https://twitter.com/kyojushin"
           logo={<i className="twitter square icon"></i>}
         />
+        <ContactLink
+          link="https://docs.google.com/document/d/15eAmnaXnFgJeqV_-JY2taQSkOZ1cHikvXiyFS6yopK4/edit?usp=sharing"
+          logo={<i className="file alternate icon"></i>}
+        />
       </div>
       <div>
         <p id="footer-name">

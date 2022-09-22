@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProjectContainer from './ProjectContainer';
 import Projects from './ProjectData';
 import ProjectFilter from './ProjectFilter';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Project = () => {
   const [project, setProject] = useState(Projects);
@@ -17,7 +18,6 @@ const Project = () => {
   const filterItems = [...new Set(uniqueLanguages.map((language) => language))];
 
   const filterProject = (selectedLanguage) => {
-    console.log(selectedLanguage);
     const newProject = Projects.filter((newVal) => {
       return newVal.language.includes(selectedLanguage);
     });
@@ -36,9 +36,11 @@ const Project = () => {
           filterItems={filterItems}
         />
       </div>
-      <div id="projects-body">
-        <ProjectContainer project={project} />
-      </div>
+      <motion.div layout id="projects-body">
+        <AnimatePresence>
+          <ProjectContainer project={project} />
+        </AnimatePresence>
+      </motion.div>
     </div>
   );
 };

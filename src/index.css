@@ -90,24 +90,31 @@ header {
 .title {
   font-size: 5rem;
   text-decoration: underline;
-  margin-bottom: 5rem;
-  padding-top: 3.5rem;
+  margin-bottom: 8vh;
+  padding-top: 5vh;
 }
 /* UNIVERSAL END */
 
 /* NAV START */
 #navigation {
   margin: 0;
-  padding: 0.5rem 0 0 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 1vh 0 0 0;
+
   border-bottom: 4px solid var(--accent-color-1);
   background-color: var(--tertiary-color);
   font-size: 2rem;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+#nav-link-container {
+  width: 20%;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -130,6 +137,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #bio-container {
@@ -137,6 +145,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #brand-container {
@@ -155,7 +164,7 @@ header {
 }
 
 #brand-image-container {
-  width: 80%;
+  /* width: 80%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,11 +205,13 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 #about-icon-container {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #icon-container {
@@ -228,22 +239,103 @@ header {
 }
 
 #filter-list {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 #filter-list button {
   margin-right: 5rem;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-size: 1.25rem;
 }
 
 #filter-list button:last-of-type {
   margin-right: 0;
 }
 
-.projects-container div {
-  width: 50%;
+#filter-list button:hover {
+  background-color: var(--accent-color-1);
+}
+
+#projects-body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.project-container {
+  width: 50%;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 3 auto;
+  grid-gap: 10%;
+  border-radius: 5%;
+  margin: 2rem;
+}
+
+.text-container,
+.image-container {
+  width: 250px;
+  height: 300px;
+  margin: 0 0.1rem 0.1rem 0.1rem;
+  overflow: hidden;
+}
+
+.project-image {
+  max-width: 250px;
+}
+
+.image-container {
+  z-index: 10;
+  position: relative;
+}
+
+.text-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-description {
+  margin: 1rem 3rem;
+}
+
+.text-container:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.project-title {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.project-language {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: var(--accent-color-2);
+}
+
+.project-button {
+  font-size: 1.5rem;
+  border: 2px solid var(--accent-color-1);
+  color: var(--accent-color-1);
+  padding: 1rem;
 }
 /* PROJECTS END */
 
@@ -317,7 +409,7 @@ header {
   margin: 1.5rem 0;
 }
 
-#logo-button {
+.logo-button {
   padding: 0;
   margin: 0;
   width: 3.7rem;
@@ -330,11 +422,22 @@ header {
 
 #logo-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
 }
 
 #logo-link i {
-  margin: 0;
-  padding: 1rem 1.2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem 0 0 0.25rem;
+  padding: 0;
   font-size: 3rem;
   color: var(--primary-color);
 }
@@ -375,3 +478,29 @@ code {
 .scroll-to-top {
   background-color: var(--accent-color-2);
 }
+
+/* @media screen and (max-width: 768) {
+  .title {
+    font-size: 3rem;
+  }
+
+  #nav-link {
+    font-size: 1rem;
+  }
+
+  #bio-brand {
+    width: 100vw;
+  }
+
+  #brand-image {
+    width: 100%;
+  }
+
+  #brand-statement {
+    font-size: 0.25rem;
+  }
+
+  #bio-skills {
+    width: 100%;
+  }
+} */
