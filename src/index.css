@@ -240,17 +240,15 @@ header {
 
 #filter-list {
   margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
 }
 
 #filter-list button {
-  margin-right: 5rem;
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-size: 1.25rem;
-}
-
-#filter-list button:last-of-type {
-  margin-right: 0;
 }
 
 #filter-list button:hover {
@@ -264,7 +262,7 @@ header {
 }
 
 .project-container {
-  width: 50%;
+  width: 60%;
   padding: 0 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -479,28 +477,92 @@ code {
   background-color: var(--accent-color-2);
 }
 
-/* @media screen and (max-width: 768) {
+@media only screen and (max-width: 1650px) {
+  #nav-link-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+
+  #filter-list {
+    width: 90%;
+  }
+
+  #filter-list button {
+    font-size: 1rem;
+  }
+
+  #project-container {
+    width: 75%;
+  }
+
+  #grid-container {
+    grid-gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .title {
     font-size: 3rem;
   }
 
-  #nav-link {
-    font-size: 1rem;
+  #nav-link-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
   }
 
-  #bio-brand {
+  #nav-link,
+  #brand-statement,
+  #about-text {
+    font-size: 1.25rem;
+  }
+
+  #bio-brand,
+  #brand-image,
+  #bio-skills {
     width: 100vw;
   }
 
-  #brand-image {
+  #about-icon-container {
+    width: 80%;
+  }
+
+  #about-icon {
+    font-size: 2.5rem;
+  }
+
+  #brand-contact {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #filter-list {
+  }
+
+  #filter-list button {
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  #filter-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     width: 100%;
   }
 
-  #brand-statement {
-    font-size: 0.25rem;
+  #filter-list button {
+    margin-bottom: 1rem;
   }
-
-  #bio-skills {
-    width: 100%;
-  }
-} */
+}
