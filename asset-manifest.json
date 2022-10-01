@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_v2/static/css/main.b5917f39.css",
-    "main.js": "/portfolio_v2/static/js/main.0322a42e.js",
+    "main.css": "/portfolio_v2/static/css/main.06ac8308.css",
+    "main.js": "/portfolio_v2/static/js/main.11fc76bf.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio_v2/static/js/787.d9a20797.chunk.js",
     "static/media/Social-Media.png": "/portfolio_v2/static/media/Social-Media.0d72290ad9795e109248.png",
     "static/media/Photo-Portfolio.png": "/portfolio_v2/static/media/Photo-Portfolio.4cfdb178e26aa3599376.png",
@@ -12,14 +12,16 @@
     "static/media/Tech-Blog.png": "/portfolio_v2/static/media/Tech-Blog.4406b9c637cb720104f1.png",
     "static/media/Weather-Dashboard.png": "/portfolio_v2/static/media/Weather-Dashboard.d276c646670f5adea8c5.png",
     "static/media/README.png": "/portfolio_v2/static/media/README.4c0c86e4cdd35fc52e30.png",
+    "static/media/Contact-Card.png": "/portfolio_v2/static/media/Contact-Card.f8008646f36b0665c29e.png",
     "static/media/Text-Editor.png": "/portfolio_v2/static/media/Text-Editor.5712316199bc92057857.png",
+    "static/media/Note-Taker.png": "/portfolio_v2/static/media/Note-Taker.b64362848cc10aad086b.png",
     "index.html": "/portfolio_v2/index.html",
-    "main.b5917f39.css.map": "/portfolio_v2/static/css/main.b5917f39.css.map",
-    "main.0322a42e.js.map": "/portfolio_v2/static/js/main.0322a42e.js.map",
+    "main.06ac8308.css.map": "/portfolio_v2/static/css/main.06ac8308.css.map",
+    "main.11fc76bf.js.map": "/portfolio_v2/static/js/main.11fc76bf.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio_v2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5917f39.css",
-    "static/js/main.0322a42e.js"
+    "static/css/main.06ac8308.css",
+    "static/js/main.11fc76bf.js"
   ]
 }
