@@ -30,7 +30,10 @@ const Footer = () => {
       </div>
       <div>
         <p id="footer-name">
-          DUSTIN PEZLEY <span id="footer-year">2022</span>
+          DUSTIN PEZLEY <span id="footer-year">2022</span>{' '}
+          <a id="footer-email" href="mailto:dustinpezley@gmail.com">
+            dustinpezley@gmail.com
+          </a>
         </p>
       </div>
     </div>

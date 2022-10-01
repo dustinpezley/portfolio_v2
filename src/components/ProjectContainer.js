@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './Modal';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectContainer = ({ project }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [currentProject, setCurrentProject] = useState();
+
+  const toggleModal = (project, i) => {
+    setCurrentProject({ ...project, key: i });
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -35,6 +45,18 @@ const ProjectContainer = ({ project }) => {
                       : currentProject.language}
                   </p>
                 </div>
+                {currentProject.appLink !== '' && (
+                  <div className="project-button">
+                    <a
+                      href={currentProject.appLink}
+                      target="_blank"
+                      className="project-link"
+                      rel="noopener noreferrer"
+                    >
+                      See the site
+                    </a>
+                  </div>
+                )}
                 <div className="project-button">
                   <a
                     href={currentProject.link}

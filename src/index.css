@@ -245,13 +245,19 @@ header {
   width: 40%;
 }
 
-#filter-list button {
+#filter-type-list {
+  margin-bottom: 3rem;
+}
+
+#filter-list button,
+#filter-type-list button {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-size: 1.25rem;
 }
 
-#filter-list button:hover {
+#filter-list button:hover,
+#filter-type-list button:hover {
   background-color: var(--accent-color-1);
 }
 
@@ -349,6 +355,16 @@ header {
 
 #contact-title {
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#contact-description {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#contact-description-email {
+  color: var(--accent-color-2);
 }
 
 #form-elements {
@@ -455,6 +471,11 @@ header {
 
 #footer-year {
   color: var(--accent-color-2);
+}
+
+#footer-email {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 /* FOOTER END */
 
