@@ -108,6 +108,23 @@ const Projects = [
     description:
       'This is a simple productivity app to take notes and save them in the cloud.',
   },
+  {
+    name: 'APPly',
+    language: [
+      'JavaScript',
+      'React-JS',
+      'ExpressJS',
+      'MongoDB',
+      'NodeJS',
+      'Bootstrap',
+    ],
+    image: 'APPly',
+    link: 'https://github.com/sarameadows/APPly',
+    id: 'apply',
+    type: ['Full-stack'],
+    appLink: 'https://apply-portal.herokuapp.com/',
+    description: 'Web app for saving job searches from multiple sources.',
+  },
 ];
 
 export default Projects;
