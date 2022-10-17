@@ -57,6 +57,18 @@ const ProjectContainer = ({ project }) => {
                     </a>
                   </div>
                 )}
+                {currentProject.appLink === '' && (
+                  <div className="project-button">
+                    <a
+                      href={`${currentProject.link}/blob/main/README.md`}
+                      target="_blank"
+                      className="project-link"
+                      rel="noopener noreferrer"
+                    >
+                      See the README
+                    </a>
+                  </div>
+                )}
                 <div className="project-button">
                   <a
                     href={currentProject.link}

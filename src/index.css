@@ -247,6 +247,9 @@ header {
 
 #filter-type-list {
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #filter-list button,
@@ -254,6 +257,7 @@ header {
   background-color: var(--tertiary-color);
   color: var(--secondary-color);
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #filter-list button:hover,
