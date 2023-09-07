@@ -17,7 +17,7 @@ const Projects = [
     link: 'https://github.com/dustinpezley/pwa-text-editor',
     id: 'text-editor',
     type: ['Full-stack'],
-    appLink: 'https://morning-cliffs-57458.herokuapp.com/',
+    appLink: 'https://texteditor-5fmw.onrender.com',
     description:
       'Simple text editor with JavaScript highlighting that can be run online or offline. Text will persist on reload.',
   },
@@ -28,7 +28,7 @@ const Projects = [
     link: 'https://github.com/dustinpezley/the-tech-blog',
     id: 'tech-blog',
     type: ['Full-stack'],
-    appLink: 'https://intense-headland-04601.herokuapp.com/',
+    appLink: 'https://techblog-pl88.onrender.com',
     description:
       'A simple CMS-style blog with user authentication and posting and commenting functionality. Database is currently seeded with test data.',
   },
@@ -93,7 +93,7 @@ const Projects = [
     link: 'https://github.com/dustinpezley/contact-card',
     id: 'contact-card',
     type: ['Full-stack'],
-    appLink: 'https://agile-everglades-84414.herokuapp.com/',
+    appLink: 'https://contactcard-6glp.onrender.com',
     description:
       'Web app utilizing ExpressJS and IndexedDB for keeping track of contact information.',
   },
@@ -104,7 +104,7 @@ const Projects = [
     link: 'https://github.com/dustinpezley/note-taker',
     id: 'note-taker',
     type: ['Full-stack'],
-    appLink: 'https://pacific-cove-62879.herokuapp.com/',
+    appLink: 'https://note-taker-62mp.onrender.com',
     description:
       'This is a simple productivity app to take notes and save them in the cloud.',
   },
@@ -122,7 +122,7 @@ const Projects = [
     link: 'https://github.com/sarameadows/APPly',
     id: 'apply',
     type: ['Full-stack'],
-    appLink: 'https://apply-portal.herokuapp.com/',
+    appLink: '',
     description: 'Web app for saving job searches from multiple sources.',
   },
 ];
