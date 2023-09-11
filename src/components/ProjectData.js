@@ -110,20 +110,31 @@ const Projects = [
   },
   {
     name: 'APPly',
-    language: [
-      'JavaScript',
-      'React-JS',
-      'ExpressJS',
-      'MongoDB',
-      'NodeJS',
-      'Bootstrap',
-    ],
+    language: ['JavaScript', 'ThreeJS'],
     image: 'APPly',
     link: 'https://github.com/sarameadows/APPly',
     id: 'apply',
     type: ['Full-stack'],
     appLink: '',
     description: 'Web app for saving job searches from multiple sources.',
+  },
+  {
+    name: 'Procedural Map',
+    language: [
+      'JavaScript',
+      'HTML',
+      'ExpressJS',
+      'MongoDB',
+      'NodeJS',
+      'Bootstrap',
+    ],
+    image: 'Procedural-Map',
+    link: 'https://github.com/dustinpezley/procedural-map',
+    id: 'procedural-map',
+    type: ['Front-end'],
+    appLink: 'https://dustinpezley.github.io/procedural-map/',
+    description:
+      'ThreeJS project to create a random map of hexagons with a few added details.',
   },
 ];
 
