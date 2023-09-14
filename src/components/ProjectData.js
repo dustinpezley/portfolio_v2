@@ -120,14 +120,7 @@ const Projects = [
   },
   {
     name: 'Procedural Map',
-    language: [
-      'JavaScript',
-      'HTML',
-      'ExpressJS',
-      'MongoDB',
-      'NodeJS',
-      'Bootstrap',
-    ],
+    language: ['JavaScript', 'NodeJS', 'ThreeJS'],
     image: 'Procedural-Map',
     link: 'https://github.com/dustinpezley/procedural-map',
     id: 'procedural-map',
@@ -135,6 +128,17 @@ const Projects = [
     appLink: 'https://dustinpezley.github.io/procedural-map/',
     description:
       'ThreeJS project to create a random map of hexagons with a few added details.',
+  },
+  {
+    name: 'Car Physics',
+    language: ['JavaScript', 'NodeJS', 'ThreeJS', 'React-JS', 'CannonJS'],
+    image: 'Car-Physics',
+    link: 'https://github.com/dustinpezley/car-physics',
+    id: 'car-physics',
+    type: ['Front-end'],
+    appLink: 'https://dustinpezley.github.io/car-physics/',
+    description:
+      'Car racing game with keyboard controls (WASD) and wacky physics.',
   },
 ];
 
