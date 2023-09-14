@@ -110,7 +110,7 @@ const Projects = [
   },
   {
     name: 'APPly',
-    language: ['JavaScript', 'ThreeJS'],
+    language: ['JavaScript', 'NodeJS', 'ExpressJS', 'React-JS', 'MongoDB', 'GraphQL'],
     image: 'APPly',
     link: 'https://github.com/sarameadows/APPly',
     id: 'apply',
