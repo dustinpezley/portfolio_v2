@@ -13,12 +13,19 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color-2);
+  scrollbar-track-color: transparent;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
+  position: fixed;
+  display: none;
 }
+
+/* *::-webkit-scrollbar-gutter {
+  display: none;
+} */
 
 *::-webkit-scrollbar-track {
   background: transparent;
